@@ -975,6 +975,9 @@
                 videoTexture.minFilter = THREE.LinearFilter;
                 videoTexture.magFilter = THREE.LinearFilter;
                 videoTexture.format = THREE.RGBFormat;
+                videoTexture.needsUpdate = true;
+                videoTexture.toneMappingExposure = true;
+                videoTexture.toneMapping = true;
 
                 const material = new THREE.MeshBasicMaterial({ map: videoTexture });
                 goldengate.traverse((child) => {

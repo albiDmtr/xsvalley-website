@@ -549,6 +549,7 @@
             width: 100%;
             height: 100%;
             z-index: -2;
+            background: black !important;
         }
         .inter {
             font-family: 'Inter', sans-serif;
